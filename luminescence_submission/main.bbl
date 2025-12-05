@@ -1,0 +1,134 @@
+\begin{thebibliography}{19}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Coblentz(1912)]{Coblentz1912}
+William~W. Coblentz.
+\newblock \emph{A Physical Study of the Firefly}.
+\newblock Publication No. 164. Carnegie Institution of Washington, Washington,
+  D.C., 1912.
+\newblock URL \url{https://archive.org/details/carnegieinstitut164carn}.
+
+\bibitem[Harvey(1952)]{Harvey1952}
+E.~Newton Harvey.
+\newblock \emph{Bioluminescence}.
+\newblock Academic Press, New York, 1952.
+
+\bibitem[de~Wet et~al.(1987)de~Wet, Wood, DeLuca, Helinski, and
+  Subramani]{deWet1987}
+Jeffrey~R. de~Wet, Keith~V. Wood, Marlene DeLuca, Donald~R. Helinski, and
+  Suresh Subramani.
+\newblock Firefly luciferase gene: structure and expression in mammalian cells.
+\newblock \emph{Molecular and Cellular Biology}, 7:\penalty0 725--737, 1987.
+
+\bibitem[Shimomura(2006)]{Shimomura2006}
+Osamu Shimomura.
+\newblock \emph{Bioluminescence: Chemical Principles and Methods}.
+\newblock World Scientific, Singapore, 2006.
+
+\bibitem[Viviani(2002)]{Viviani2002}
+Vadim~R. Viviani.
+\newblock The origin, diversity, and structure-function relationships of insect
+  luciferases.
+\newblock \emph{Cellular and Molecular Life Sciences}, 59:\penalty0 1833--1850,
+  2002.
+
+\bibitem[Ando et~al.(2008)Ando, Niwa, Yamada, Enomoto, Irie, Kubota, Ohmiya,
+  and Akiyama]{Ando2008}
+Yoshihiro Ando, Kazuki Niwa, Nobuyuki Yamada, Takashi Enomoto, Toshiteru Irie,
+  Hiroshi Kubota, Yoshihiro Ohmiya, and Haruki Akiyama.
+\newblock Firefly bioluminescence quantum yield and colour change by
+  ph-sensitive green emission.
+\newblock \emph{Nature Photonics}, 2:\penalty0 44--47, 2008.
+
+\bibitem[Ohba and Meyer-Rochow(2012)]{Ohba2012}
+Nobuyoshi Ohba and Victor~Benno Meyer-Rochow.
+\newblock Short- and mid-wavelength artificial light influences the flash
+  signals of \textit{{Aquatica} ficta} fireflies ({Coleoptera}: {Lampyridae}).
+\newblock \emph{Journal of Ethology}, 30:\penalty0 215--222, 2012.
+
+\bibitem[Ho et~al.(2022)Ho, Kuo, Tsai, Wu, Lai, and Chen]{Ho2022}
+Jui-Yuan Ho, Tzu-Hsiang Kuo, Chun-Lin Tsai, Chu-Hua Wu, Chiun-Cheng Lai, and
+  Ching-Fu Chen.
+\newblock Luminescent characteristics of nine {Taiwanese} firefly species.
+\newblock \emph{Scientific Reports}, 12:\penalty0 17326, 2022.
+
+\bibitem[Branchini et~al.(2005)Branchini, Southworth, Murtiashaw, Magyar,
+  Gonzalez, Ruggiero, and Stroh]{Branchini2005}
+Bruce~R. Branchini, Tara~L. Southworth, Martha~H. Murtiashaw, Roby~A. Magyar,
+  Stephanie~A. Gonzalez, Mark~C. Ruggiero, and Justin~G. Stroh.
+\newblock An alternative mechanism of bioluminescence color determination in
+  firefly luciferase.
+\newblock \emph{Biochemistry}, 44:\penalty0 1385--1393, 2005.
+
+\bibitem[Ugarova and Brovko(2002)]{Ugarova2005}
+Natalia~N. Ugarova and L.~Yu. Brovko.
+\newblock Protein structure and bioluminescent spectra for firefly
+  bioluminescence.
+\newblock \emph{Luminescence}, 17:\penalty0 321--330, 2002.
+
+\bibitem[Wood et~al.(1989)Wood, Lam, Seliger, and McElroy]{Wood1989}
+Keith~V. Wood, Y.~A. Lam, H.~H. Seliger, and W.~D. McElroy.
+\newblock Complementary {DNA} coding click beetle luciferases can elicit
+  bioluminescence of different colors.
+\newblock \emph{Science}, 244:\penalty0 700--702, 1989.
+
+\bibitem[Timmins et~al.(2001)Timmins, Robb, Wilmot, Jackson, and
+  Swartz]{Timmins2001}
+Graham~S. Timmins, Frank~J. Robb, Carrie~M. Wilmot, Sandra~K. Jackson, and
+  Harold~M. Swartz.
+\newblock Firefly flashing is controlled by gating oxygen to light-emitting
+  cells.
+\newblock \emph{Journal of Experimental Biology}, 204:\penalty0 2795--2801,
+  2001.
+
+\bibitem[Niwa et~al.(2010)Niwa, Ichino, Kumata, Nakajima, Hiraishi, Kato,
+  Viviani, and Ohmiya]{Niwa2010}
+Kazuki Niwa, Yoshihiro Ichino, Satoshi Kumata, Yuki Nakajima, Yoko Hiraishi,
+  Daisuke Kato, Vadim~R. Viviani, and Yoshihiro Ohmiya.
+\newblock Quantum yields and kinetics of the firefly bioluminescence reaction
+  of beetle luciferases.
+\newblock \emph{Photochemistry and Photobiology}, 86:\penalty0 1046--1049,
+  2010.
+
+\bibitem[Lewis and Cratsley(2008)]{Lewis2008}
+Sara~M. Lewis and Christopher~K. Cratsley.
+\newblock Flash signal evolution, mate choice and predation in fireflies.
+\newblock \emph{Annual Review of Entomology}, 53:\penalty0 293--321, 2008.
+
+\bibitem[Bay et~al.(2012)Bay, Cloetens, Suhonen, and Vigneron]{Bay2012}
+Annick Bay, Peter Cloetens, Heikki Suhonen, and Jean-Pol Vigneron.
+\newblock Improved light extraction in the bioluminescent lantern of a
+  \textit{{Photuris}} firefly ({Lampyridae}).
+\newblock \emph{Optics Express}, 20:\penalty0 20821--20827, 2012.
+
+\bibitem[Harvey and Stevens(1928)]{Harvey1928}
+E.~Newton Harvey and K.~L. Stevens.
+\newblock The brightness of the light of the {West Indian} elaterid beetle,
+  \textit{{Pyrophorus}}.
+\newblock \emph{Journal of General Physiology}, 12:\penalty0 269--272, 1928.
+
+\bibitem[Goh et~al.(2022)Goh, Wang, Ni, and Wang]{Goh2022}
+King-Siang Goh, Liang-Jong Wang, Jing-Han Ni, and Tzi-Yuan Wang.
+\newblock Luminescent characteristics and mitochondrial {COI} barcodes of nine
+  cohabitated {Taiwanese} fireflies.
+\newblock \emph{PeerJ}, 10:\penalty0 e14195, 2022.
+\newblock \doi{10.7717/peerj.14195}.
+
+\bibitem[Levy(1998)]{Levy1998}
+Hazel~C. Levy.
+\newblock Greatest bioluminescence.
+\newblock In \emph{University of Florida Book of Insect Records}, chapter~29,
+  pages 72--73. University of Florida, Gainesville, FL, 1998.
+
+\bibitem[Langley and Very(1890)]{Langley1890}
+Samuel~P. Langley and Frank~W. Very.
+\newblock On the cheapest form of light, from studies at the {Allegheny
+  Observatory}.
+\newblock \emph{American Journal of Science}, 40:\penalty0 97, 1890.
+\newblock Also in Smithsonian Miscellaneous Collections, vol. 41, 1901.
+
+\end{thebibliography}

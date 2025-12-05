@@ -1,0 +1,250 @@
+nah
+
+see emails:
+"ynn Faust <tnlfaust@gmail.com>
+Tue, Mar 4, 2:01 PM
+to me
+
+When you get it all figured out please let me know!!!! 
+
+On Tue, Mar 4, 2025, 1:59 PM David Silver <silverdavi@gmail.com> wrote:
+Dear Lynn,
+
+Thank you for the helpful details. The points about species/sex/lantern size/motivation affecting brightness are useful. Also fireflies appearing much dimmer than LEDs and cameras struggling to capture them makes me rethink whether the 1/40th of a candle estimate I’ve seen is more about perceived luminance rather than absolute photon output. 
+
+I’ve also reached out to biochemists working with luciferase and luminescence to see if they can help from the reaction side. Hopefully, that will provide more clarity.
+
+
+
+Thanks again for your time and input—I really appreciate it.
+
+Best,
+
+David
+
+https://about.me/dsilver
+
+
+
+On Tue, Mar 4, 2025 at 12:17 PM Lynn Faust <tnlfaust@gmail.com> wrote:
+Hi David, 
+I sure wish I could help you and very interested in your findings. But I have none of your skills. 
+
+I will say, it depends on the firefly species and the sex when determining intensities. Lantern size, spectra of the flash, and genus matters also and even the motivational status of each individual. 
+
+Males are often brighter near signalling females- at least to my eyes.  Photinus males change colors depending on competition and motivational status (from yellow to almost pink orange) They revert quickly back to yellow if captured- you can watch the change- amazing. The Photinus genus we think ,maybe every species does this to some degree- we have seen this from east coast to AZ to Canada in many Photinus species. Then the Photuris males are capable of a number of different courtship flash patterns- some brighter than others in the same individual.
+
+Every year people are frustrated and contact me that their cameras/phones picked up LED test lights just fine but not the real fireflies. That is definitely true. LED is MUCH brighter!
+
+I have worked over 15 years  with many filmcrews (BBC, Nat geo etc) and every year their cameras are more and more light sensitive. Picking up[ more and more flashes, that our eyes can easily see. Some of the most recent cameras are now picking up MORE flashes than I can see (but my eyes are now 70- so maybe that is my shortcoming). Hope this helps. Lynn
+
+Lynn Faust
+
+11828 Couch Mill Rd
+
+Knoxville, TN 37932 USA
+
+TNLFaust@gmail.com
+
+
+Fireflies, Glow-worms, and Lightning Bugs: Identification and Natural History of the Fireflies of the Eastern and Central United States and Canada
+
+
+
+
+On Tue, Mar 4, 2025 at 8:20 AM David Silver <silverdavi@gmail.com> wrote:
+Dear Dr. Sarah E. Lower,(MEANT LYNN!!!)
+
+TL;DR: From biological calculation it seems a firefly should produce 1/100th of the intensity it does. I am trying to resolve it but cannot.
+
+My name is David H. Silver, and I am writing a sort of popular science book in which I make it a point to understand and present accurate and precise science behind the phenomena I am presenting.
+
+I started a chapter that connects the gene expression of LUC all the way to the visible flash of fireflies, and I hit a wall. Biologically, it seems one can expect an order of magnitude of 10^10−10^12 photons per firefly per flash, but measurements detect 100x-1000x more.
+
+My Calculation:
+Luciferase per photocyte: ~10^6 molecules.
+Total photocytes per firefly: ~10^5
+Luciferase turnover: ~1 reaction/sec.
+Quantum yield: ~40% (0.4 photons per reaction).
+Estimated photons per second (biology-based): 10^6×10^5×1×0.4 = ~10^11 photons/sec.
+Experimental Measurements I Used for Observed Brightness:
+1/40 of a candle (~0.025 cd).
+Papers with intensity & lux measurements leading to estimates of ~0.01–0.1 lumens per firefly flash.
+Observed luminous intensity → Converted to photons/sec (at the proper wavelength): 10^14 photons/sec.
+Where have I gone wrong? Is there something I’m missing in in vivo enzymatic rates, oxygen diffusion, or cellular structure that bridges this gap? I am trying to find the correct people to ask about this conundrum.
+
+Much thanks! Love your work!
+
+Best,
+David
+"
+
+"
+
+---------- Forwarded message ---------
+From: Timothy Fallon <tfallon@ucsd.edu>
+Date: Tue, Mar 4, 2025 at 6:06 PM
+Subject: Re: Firefly Bioluminescence – Order-of-Magnitude Check
+To: David Silver <silverdavi@gmail.com>
+
+
+Please feel free to cite David. Best wishes for your book.
+
+All the best,
+-Tim
+___________________________________
+Timothy R. Fallon, PhD
+Postdoctoral Scholar - Moore Laboratory
+
+Center for Marine Biotechnology and Biomedicine 
+Scripps Institution of Oceanography 
+University of California, San Diego 
+
+tfallon@ucsd.edu
+Google Scholar publications and citations
+Website: http://photocyte.github.io
+Pronouns: (he/him/his)
+
+On Mar 4, 2025, at 2:52 PM, David Silver <silverdavi@gmail.com> wrote:
+
+Hi Tim,
+
+Thank you! Your numbers make sense, and I think I found work that aligns with the estimate of 10^8−10^9 photons per flash (calc below*). They didn’t use an integrating sphere but instead calibrated a spectrometer with an optical fiber connected to a chamber that held the fireflies (https://peerj.com/articles/14195/)
+
+I’ll keep working on it, and hopefully, I’ll have access to both an integrating sphere and live fireflies in the near future to validate the data!
+
+I’m writing an (un)popular science book that presents well-known science tidbits but with high technical accuracy, so verifying these numbers is critical. Would it be okay to cite your email in the chapter?
+I’ve attached the first draft (just to see how it is structured) of the firefly section (one of about 30 chapters in progress. If you're curious, here’s the link to the project: https://www.kickstarter.com/projects/davidhsilver/no-shortcuts-science-takes-effort-but-its-worth-it)
+
+Thanks again!
+
+Best,
+David
+
+
+
+
+<image.png>
+
+
+Calc:
+# Re-import necessary libraries as execution state was reset
+import numpy as np
+
+# Constants
+h = 6.626e-34  # Planck's constant (Joule·seconds)
+c = 3.0e8  # Speed of light (meters/second)
+
+# Given data from the PeerJ paper:
+# Estimated irradiance from spectrometer calibration (approximate from similar studies)
+irradiance_estimate = 2000e-9 # mean is 500e-9  # W/cm² converted to W/m²
+
+# Firefly emission peak wavelength (~560 nm)
+wavelength_firefly = 560e-9  # meters
+
+# Compute energy per photon
+energy_per_photon = h * c / wavelength_firefly  # Joules per photon
+
+# Compute photon flux (photons per second per square meter)
+photon_flux = irradiance_estimate / energy_per_photon
+
+# Optical fiber collection area (2 mm diameter fiber)
+fiber_diameter = 2e-3  # 2 mm
+fiber_radius = fiber_diameter / 2
+fiber_area = np.pi * fiber_radius**2  # m²
+
+# Compute total photon emission detected (photon flux * collection area)
+photon_emission_detected = photon_flux * fiber_area
+
+# Scale up to full firefly emission (assumed total emission area ~5 mm²)
+firefly_lantern_area = 5e-6  # m² (estimated total lantern surface area)
+scaling_factor = firefly_lantern_area / fiber_area
+
+# Compute total estimated photon emission per second
+total_photon_emission = photon_emission_detected * scaling_factor
+
+# Compute total photons per flash assuming flash duration of 200-300 ms
+flash_duration_range = (0.2, 0.3)  # seconds
+total_photons_flash = (total_photon_emission * flash_duration_range[0],
+                        total_photon_emission * flash_duration_range[1])
+
+photon_flux, photon_emission_detected, total_photon_emission, total_photons_flash
+
+roughly 10^7, but the cross section both of the optic fiber and the lantern are flexible so it makes sense
+
+On Tue, Mar 4, 2025 at 2:24 PM Timothy Fallon <tfallon@ucsd.edu> wrote:
+Hi David,
+
+It’s an interesting question. My comments would be, it’s non trivial to absolutely measure light production, so I might double check your photons per firefly flash measurement. 
+
+I gave a quick look for “flash" “pyralis" “photon" “sphere” (for an integrating sphere, a key part of absolute light measurements) in my literature library, but unfortunately nothing came up. A caveat seems to be that the terminology “integrating sphere” wasn’t in common use in the 60s or 70s, when these measurements probably would have been done most carefully.
+
+Anyway, from my notebook, my calculation for how much a pyralis flash was, came out to:  "~1e8-1e9 photons (4e12 * 0.25 second)" . I don’t have a reference for that. But presumably it was an assumption based off a figure from some paper.
+
+The quantum yield in-vivo might be a bit higher. There is also the fact that luciferase in the firefly starts in a bit of an unusual active luciferyl-AMP intermediate state before the flash (O2 triggered). So, the start part of the flash, is engaging much more of the luciferase than steady state kinetics would predict. 
+
+I also suspect there is more luciferase per photocyte, but don’t have a great resource for that.
+
+I’m attatching a PDF of a book, that has the major players during the time this would have been investigated:
+https://drive.google.com/file/d/16IEssnk_AwIow-icGF1KkPIp8YzKE4gK/view?usp=drive_link
+
+Seliger, in McElroy’s laboratory, would have been the world expert on this. 
+
+Hope that helps. Bottom-line, your calculation seems well founded. But the flash is terminated more likely by consumption of O2 than anything else, and I don’t think there are any measurements for that, as that it going to be a phenomena of neurobiological and mitochondrial kinetics, that would be very tricky to measure in vivo. I’m attatching a second paper directly, which is most in-depth thinking around the flash control. I don’t think their hydrogen peroxide model is quite right, but, they thought deeply on it. 
+
+All the best,
+-Tim
+___________________________________
+Timothy R. Fallon, PhD
+Postdoctoral Scholar - Moore Laboratory
+
+Center for Marine Biotechnology and Biomedicine 
+Scripps Institution of Oceanography 
+University of California, San Diego 
+
+tfallon@ucsd.edu
+Google Scholar publications and citations
+Website: http://photocyte.github.io
+Pronouns: (he/him/his)
+
+
+On Mar 4, 2025, at 10:49 AM, David Silver <silverdavi@gmail.com> wrote:
+
+Dear Dr. Fallon,
+
+TL;DR: From biological calculation, it seems a firefly should produce 1/100th of the intensity it does. I am trying to resolve it but cannot.
+
+Dr. Sarah Lower suggested that you may be one of the best people to contact.
+
+My name is David H. Silver, and I am writing a sort of popular science book in which I make it a point to understand and present accurate and precise science behind the phenomena I am presenting.
+
+I started a chapter that connects the gene expression of LUC all the way to the visible flash of fireflies, and I hit a wall. Biologically, it seems one can expect an order of magnitude of 10¹⁰ – 10¹² photons per firefly per flash, but measurements detect 100× – 1000× more.
+
+My Calculation:
+Luciferase per photocyte: ~10⁶ molecules (10^6)
+Total photocytes per firefly: ~10⁵ (10^5)
+Luciferase turnover: ~1 reaction/sec
+Quantum yield: ~40% (0.4 photons per reaction)
+Estimated photons per second (biology-based):
+10⁶ × 10⁵ × 1 × 0.4 ≈ 10¹¹ photons/sec (10^11)
+Experimental Measurements I Used for Observed Brightness:
+1/40 of a candle (~0.025 cd)
+Papers with intensity & lux measurements leading to estimates of ~0.01–0.1 lumens per firefly flash
+Observed luminous intensity → Converted to photons/sec (at the proper wavelength): 10¹⁴ photons/sec (10^14)
+I understand both the reflective layer in the lantern and the high efficiency of bioluminescence. Even if all produced photons were visible, my estimate still falls short by orders of magnitude.
+
+Where have I gone wrong? Is there something missing in in vivo enzymatic rates, oxygen diffusion, or cellular structure that could explain the gap?
+
+Much thanks!
+
+Best,
+David
+https://about.me/dsilver
+
+
+<Draft_Fireflies_Chapter.pdf>
+
+"
+
+
+
