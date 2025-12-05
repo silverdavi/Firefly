@@ -1,130 +1,90 @@
-# Firefly Bioluminescence: The Century-Old Error
+# The Canonical Firefly Luminosity Is Overestimated by 10³–10⁴-Fold
 
-**A Bottom-Up Biochemical Analysis Exposing a 3-Million-Fold Overestimate**
-
-David H. Silver | March 2025
+David H. Silver | 2025
 
 ---
 
-## The Discovery
+## Summary
 
-A biochemical calculation reveals that the canonical firefly luminosity measurement from 1924 (**"1/40 candle"** by Ives & Coblentz) overestimates actual photon emission by:
+The commonly cited firefly brightness—"1/40 candlepower" from Ives and Coblentz (1924)—corresponds to 3×10¹⁴ photons per flash. This exceeds the theoretical maximum imposed by luciferase abundance and quantum yield by 10³–10⁴-fold.
 
-### ~3.2 Million Times (6.5 orders of magnitude)
+Direct field measurements with a calibrated lux meter yield 10¹⁰–10¹¹ photons per flash, consistent with both the biochemical bound and reanalysis of historical and modern spectroscopic data.
 
-| Method | Photons/Flash | Year |
-|--------|---------------|------|
-| **Ives & Coblentz** | 3.26 × 10¹⁴ | 1924 |
-| **This Work** | 1.02 × 10⁸ | 2025 |
-| **Fallon Estimate** | 10⁸-10⁹ | 2025 |
-| **Goh & Wang** | 3-5 × 10⁸ | 2022 |
+---
 
-**This appears to be the first biochemical challenge to this measurement in 100 years.**
+## Key Results
+
+| Source | Method | Photons/flash |
+|--------|--------|---------------|
+| Commonly cited | "1/40 candle" | 3 × 10¹⁴ |
+| Coblentz (1912) original | Visual photometry | 3 × 10¹³ |
+| Harvey & Stevens (1928) | Surface brightness | 6 × 10¹¹ |
+| Goh et al. (2022) | Lux meter | 10¹⁰–10¹¹ |
+| Biochemical bound | Enzyme × yield | 10⁸–4 × 10¹⁰ |
+| **This work** | Lux meter | **10¹⁰–4 × 10¹¹** |
+
+Four independent estimates converge on 10¹⁰–10¹¹ photons per flash. The 1924 value is an outlier by 10³–10⁴.
+
+---
+
+## The Two Errors
+
+**Error 1: Transcription.** Coblentz's 1912 data state the predominant flash intensity was 1/400 candle (not 1/40). The value propagated through secondary literature is "1/40 candle"—either a transcription error (1/400 → 1/40) or a rounded maximum.
+
+**Error 2: Methodological biases.** Visual nulling photometry applied to brief, spectrally narrow emissions introduces systematic biases:
+- Observers match peak rather than time-integrated intensity (2–4× inflation)
+- Candlepower assumes isotropic emission; firefly lanterns emit into 1–2 sr (6–12× inflation)
+- 560 nm emission sits at peak human photopic sensitivity
+
+These biases multiply.
+
+---
+
+## Biochemical Bound
+
+```
+N_photons = N_cells × N_enz × k_eff × Φ × t
+
+         = 10⁵ photocytes
+         × 10⁶ luciferase/cell
+         × 0.01–1 s⁻¹ turnover
+         × 0.41 quantum yield
+         × 0.25 s flash
+
+         = 10⁸ – 4×10¹⁰ photons
+```
+
+Even if every enzyme fires exactly once, maximum output is 4×10¹⁰ photons—four orders of magnitude below the canonical value.
+
+---
+
+## Field Measurements
+
+Lux-meter data collected in Sungai Petani, Malaysia (November 2025) from wild-caught *Pteroptyx* fireflies:
+
+| Distance | Mean ΔLux | Max ΔLux |
+|----------|-----------|----------|
+| 1 cm | 0.30 | 0.5 |
+| 2 cm | 0.23 | 0.5 |
+| 3 cm | 0.04 | 0.2 |
+
+Peak flash: 0.5 lux at 1 cm → 10¹⁰–4×10¹¹ photons/flash (with geometric correction for directional emission).
 
 ---
 
 ## Repository Contents
 
-### Core Documents
-
-1. **EXECUTIVE_SUMMARY.md** — Complete overview of the discovery, key findings, evidence, and publication strategy
-
-2. **PUBLICATION_DRAFT.md** — Full manuscript (~6,000 words) with Abstract, Introduction, Methods, Results, Discussion
-
-3. **CALCULATIONS.md** — Detailed step-by-step calculations: biochemical bottom-up approach, historical photometry conversion, discrepancy analysis
-
-### Computational Analysis
-
-4. **firefly_calculations.py** — Python script with all calculations; generates figures automatically
-   ```
-   source venv/bin/activate && python firefly_calculations.py
-   ```
-
-### Figures (Publication Quality)
-
-5. **figure_1_discrepancy.png/.pdf** — Logarithmic comparison of all estimates showing 6.5 orders of magnitude discrepancy
-
-6. **figure_2_energy_budget.png/.pdf** — Energy pathway from ATP to photon; ATP budget verification
-
-7. **figure_3_timeline.png/.pdf** — 100-year propagation of the error: Harvey (1952) → Shimomura (2006) → present
-
-### Supporting Files
-
-8. **emails.txt** — Original correspondence with Tim Fallon (Scripps) and Lynn Faust; used with permission
-
-9. **25_FireflyBioluminescence/** — Original book chapter files (main.tex, historical.tex, technical.tex, etc.)
-
-10. **luminescence_submission/** — LaTeX submission package with compiled PDF
+- `luminescence_submission/` — Manuscript (main.tex, main.pdf) and references
+- `25_FireflyBioluminescence/` — Book chapter source exploring the topic
+- `firefly_calculations.py` — Computational analysis and figures
+- `emails.txt` — Expert correspondence (Fallon, Faust)
 
 ---
 
-## Key Findings
+## Citation
 
-### Biochemical Calculation
-```
-10⁶ luciferase/photocyte 
-× 10⁵ photocytes/firefly 
-× 0.01 reactions/sec/enzyme (O₂-limited)
-× 0.41 photons/reaction 
-× 0.25 sec flash 
-= 1.02 × 10⁸ photons/flash ✓
-```
-
-### Historical Measurement (Ives & Coblentz 1924)
-```
-1/40 candle = 0.025 cd
-→ 0.314 lm (isotropic)
-→ 4.62×10⁻⁴ W at 560 nm
-→ 1.30×10¹⁵ photons/sec
-→ 3.26×10¹⁴ photons/flash ✗
-```
-
-### Independent Confirmation
-- **Tim Fallon** (Scripps): 10⁸-10⁹ photons/flash
-- **Goh & Wang 2022**: 3-5 × 10⁸ photons/flash  
-- **Lynn Faust**: "LED is MUCH brighter than fireflies"
-- **ATP budget**: Only 0.0004% of cellular ATP consumed
+> Silver, D.H. (2025). The canonical firefly luminosity is overestimated by 10³–10⁴-fold. *In preparation.*
 
 ---
 
-## Significance
-
-1. **Never challenged biochemically** — First analysis in 100 years
-2. **Widely propagated** — Appears in Harvey, Shimomura, textbooks
-3. **No modern validation** — Never replicated with integrating sphere
-4. **Major discrepancy** — 6.5 orders of magnitude error
-5. **Cross-disciplinary** — Biochemistry validates/refutes photometry
-
-### Impact
-
-Requires updating:
-- Shimomura's bioluminescence monograph (standard reference)
-- Biochemistry and photobiology textbooks
-- Wikipedia and educational materials
-- Future bioluminescence research
-
----
-
-## The Calculation
-
-Bottom-up approach:
-
-1. Count the enzymes (10¹¹ total luciferase molecules)
-2. Determine their activity (0.01 sec⁻¹, oxygen-limited)
-3. Apply quantum yield (0.41 photons per reaction)
-4. Multiply by duration (250 ms flash)
-5. Result: 10⁸ photons
-
-The discrepancy is large, the evidence is strong.
-
----
-
-## Expert Confirmations
-
-- **Dr. Timothy R. Fallon** — Scripps Institution of Oceanography; confirmed calculation independently
-- **Lynn Faust** — Leading firefly naturalist; provided qualitative support
-- **Dr. Sarah E. Lower** — Firefly genomics
-
----
-
-*March 2025*
+*2025*
